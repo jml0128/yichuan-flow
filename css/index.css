@@ -1,3 +1,10 @@
+@font-face {
+	font-family:iconfont!important;src:url(../font_451728_d77umogzrdfe0zfr.eot);src:url(../font_451728_d77umogzrdfe0zfr.eot?#iefix) format('embedded-opentype'),url(../font_451728_d77umogzrdfe0zfr.woff) format('woff'),url(../font_451728_d77umogzrdfe0zfr.ttf) format('truetype'),url(../font_451728_d77umogzrdfe0zfr.svg#iconfont) format('svg')
+}
+
+.aliicon {
+	font-family: iconfont!important
+}
 html{
 	width:100%;
 	height:100%;
@@ -656,8 +663,202 @@ ul{
 }
 
 
+/* 赚钱指南页面 */
+.earn .main{
+	margin-bottom:0;
+}
+.header-box{
+	width:100%;
+	background:#354a5f;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:1.333333rem;
+}
+.header-box .header{
+	background:#354a5f;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	width:100%;
+	color:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:1.333333rem;
+}
+.header-box .header .title{
+	font-size:0.5rem;
+}
+.earn-way-box{
+	width:100%;
+	height:3.2rem;
+	background:#fff;
+	padding-top:0.8rem;
+}
+.earn-way-box .earn-way ul{
+	margin:auto;
+	width:9rem;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	font-size:0.45rem;
+	position:relative;
+}
+.earn-way-box .earn-way ul:before{
+	content:'';
+	width:2px;
+	height:80%;
+	background:#f77d7c;
+	position:absolute;
+	right:50%;
+}
+.earn-way-box .earn-way ul li{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	color:#656565;
+}
+.earn-way-box .earn-way .aliicon{
+	font-size:1.8rem;
+}
+.earn-way-box .earn-way .choose{
+	color:#f77d7c;
+}
+.earn-way-box .earn-way .choose:after{
+	content:'';
+	width:140%;
+	height:3px;
+	background:#f77d7c;
+	position:absolute;
+	left:-20%;
+	bottom:-0.3rem;
+}
+.detail-box{
+	padding:0.5rem 1rem;
+	background:#f3f3f3;
+	height:100%;
+	padding-bottom:2rem;
+}
+.detail-box .dec{
+	color:#656565;
+	font-size:0.4rem;
+	margin-bottom:0.8rem;
+}
+.detail-box .title{
+	font-size:0.4rem;
+	color:#1e1e1e;
+	margin:0.4rem 0;
+}
+.detail-box .hidden{
+	display:none;
+}
 
-
-
-
-
+/* 企业账户页面 */
+.show-pic{
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.7);
+	position:fixed;
+	z-index:999999;
+	display:none;
+	 align-items: center;
+    justify-content: center;
+}
+.company .show{
+	display:flex;
+}
+.company .main{
+	margin-bottom:3rem;
+}
+.company-part-1{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:3.733333rem;
+}
+.company-part-1-box{
+	width:9rem;
+	height:2.9rem;
+	background:url(../img/company/1.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	font-size:0.42666667rem;
+	font-weight:800!important;
+}
+.company-part-1-box p:nth-child(1){
+	font-size:0.5333333rem;
+	margin-bottom:0.3rem;
+}
+.company-part-2-box{
+	width:9rem;
+	margin:0 auto;
+	font-size:0.3733333rem;
+	color:#fff;
+	background:rgba(255,255,255,0.2);
+	border-radius:0.15rem;
+}
+.company-part-2-box p{
+	padding:0.4rem 0.3rem;
+}
+.company-part-3-box{
+	width:9rem;
+	margin:0 auto;
+	font-size:0.4rem;
+	color:#fff;
+	margin-top:0.5rem;
+}
+.company-part-3-box p{
+	text-align:center;
+}
+.company-part-3-box p a{
+	color:#fff;
+}
+.company-part-4-box ul{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:0.5rem;
+}
+.company-part-4-box ul li{
+	width:35%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.company-part-4-box ul li:nth-child(1){
+	margin-right:0.8rem;
+}
+.company-part-4-box ul li div{
+	width:80%;
+	background:rgba(255,255,255,0.2);
+	border-radius:0.15rem;
+	padding:0.2rem 0.2rem;
+	line-height:0;
+}
+.company-part-4-box ul li p{
+	font-size:0.21333333rem;
+	color:#fff;
+	margin-top:0.2rem;
+}
+.company-part-5-box{
+	width:8rem;
+	margin:0 auto;
+}
+.company-part-5-box .btn{
+	font-size:0.50666666rem;
+	color:#337ab7;
+	background:#fff;
+	text-align:center;
+	padding:0.3rem 0;
+	border-radius:.15rem;
+	margin-top:0.8rem;
+}
