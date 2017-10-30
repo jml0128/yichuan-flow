@@ -5,6 +5,7 @@
 .aliicon {
 	font-family: iconfont!important
 }
+input{-webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none;}
 html{
 	width:100%;
 	height:100%;
@@ -669,7 +670,6 @@ ul{
 }
 .header-box{
 	width:100%;
-	background:#354a5f;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -862,3 +862,266 @@ ul{
 	border-radius:.15rem;
 	margin-top:0.8rem;
 }
+
+/* 我的钱包 */
+.wallet-box{
+	padding:0;
+	margin:0.3rem 0.3rem;
+}
+.wallet{
+	background:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.wallet .today{
+	color:#ea5446;
+	font-size:0.6rem;
+	font-weight:800!important;
+	margin:0.7rem 0;
+}
+.wallet .money{
+	color:#ea5446;
+	font-weight:800!important;
+	font-size:0.6rem;
+	margin-bottom:0.8rem;
+}
+.wallet .cash{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	font-size:0.45rem;
+	width:100%;
+	border-bottom:1px solid #f1f1f1;
+	padding-bottom:0.2rem;
+}
+.wallet .btn-group{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	height:3rem;
+}
+.wallet .btn-group div{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	margin:0.7rem 0;
+}
+.wallet .btn-group div a{
+	color:#fff;
+	font-size:0.45rem;
+	background:#ea5446;
+	padding:0.25rem 0.8rem;
+	border-radius:0.15rem;
+}
+.invite-friend{
+	background:#fff;
+	margin:0.3rem 0.3rem;
+	font-size:0.45rem;
+	padding:0.2rem 0.1rem;
+}
+.invite-friend a{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	color:#656565;
+}
+.invite-friend a .icon-yaoqinghaoyou1{
+	font-size:1.6rem;
+	color:#656565;
+}
+.invite-friend a .center{
+	margin:0 0.15rem;
+	font-size:0.4rem;
+}
+.invite-friend a .center .title{
+	font-size:0.5rem;
+}
+.invite-friend a .icon-fanhui-copy{
+	font-size:0.65rem;
+	transform:rotate(180deg);
+}
+/* 邀请好友 */
+.invite-box{
+	padding:0;
+	margin:0.3rem 0.3rem;
+	height:100%;
+}
+.invite{
+	background:#ea5446;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	font-size:0.45rem;
+	color:#fff;
+}
+.invite .title{
+	font-size:0.55rem;
+	letter-spacing:0.05rem;
+	margin:0.5rem 0;
+	font-weight:800!important;
+}
+.invite .dec{
+	padding:0 0.4rem;
+	letter-spacing:0.01rem;
+	text-align:justify;
+	margin-bottom:0.2rem;
+}
+.invite .cash{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	text-align:center;
+	width:100%;
+	position:relative;
+	height:2.5rem;
+}
+.invite .cash li{
+	width:50%;
+}
+.invite .cash li:nth-child(1):after{
+	content:'';
+	height:80%;
+	width:2px;
+	background:#fff;
+	position:absolute;
+	right:50%;
+	top:10%;
+}
+.invite .cash li a{
+	color:#fff;
+}
+.invite .cash li a p:nth-child(1){
+	margin-bottom:0.3rem;
+}
+.invite-way{
+	margin:0 0.3rem;
+	height:100%;
+}
+.invite-way a{
+	background:#fff;
+	font-size:0.46rem;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	color:#656565;
+	padding:0.2rem 0.25rem;
+}
+.invite-way a:nth-child(2){
+	margin:0.2rem 0;
+}
+.invite-way a .aliicon:nth-child(1){
+	font-size:1rem;
+	color:#ff3c73;
+	margin-right:0.25rem;
+}
+.invite-way a .name{
+	flex-grow:1;
+}
+.invite-way a .dec{
+	flex-grow:1;
+	text-align:right;
+	font-size:0.35rem;
+	margin-right:0.1rem;
+}
+.invite-way a .icon-fanhui-copy{
+	font-size:0.65rem;
+	transform:rotate(180deg);
+}
+.invite-introduce{
+	margin:0 0.3rem;
+	margin-top:0.3rem;
+	background:#fff;
+	height:100%;
+	padding:0.4rem 0.5rem;
+	margin-bottom:0.7rem;
+}
+.invite-introduce .title{
+	font-size:0.48rem;
+	color:#656565;
+}
+.invite-introduce .text{
+	font-size:0.43rem;
+	color:#979797;
+	text-indent:0.86rem;
+	text-align:justify;
+	letter-spacing:0.01rem;
+	margin:0.5rem 0;
+}
+/* 绑定手机号码 */
+.phone-box{
+	margin:0.3rem;
+	background:#fff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	padding:0 1rem;
+}
+.phone-box .title{
+	color:#656565;
+	font-size:0.65rem;
+	margin-top:1.2rem;
+	margin-bottom:0.9rem;
+}
+.phone-box .phone-num{
+	width:100%;
+	line-height:0;
+}
+.phone-box input{
+	font-size:0.4rem;
+	border:1px #656565 solid;
+	background:#f6f6f6;
+	height:1.2rem;
+	width:100%;
+	outline:none;
+	line-height:1;
+	padding:0;
+	text-indent:0.2rem;
+}
+.phone-box .get-yzm{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:100%;
+	margin-top:0.8rem;
+}
+.phone-box .get-yzm input{
+	width:40%;
+	margin:0;
+}
+.phone-box .get-yzm .btn{
+	background:#008de8;
+	color:#fff;
+	font-size:0.45rem;
+	height:1.2rem;
+	padding:0 0.5rem;
+	line-height:1.2rem;
+}
+.phone-box .sure-btn{
+	background:#008de8;
+	color:#fff;
+	font-size:0.45rem;
+	height:1.3rem;
+	line-height:1.3rem;
+	width:100%;
+	text-align:center;
+	margin-top:0.8rem;
+	margin-bottom:0.8rem;
+	letter-spacing:0.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
