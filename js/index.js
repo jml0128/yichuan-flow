@@ -1,3 +1,13 @@
+function submit(){
+	//con为评价内容
+	var con = $('textarea')[1].value;
+	console.log($('textarea')[1].value);
+	layer.closeAll();
+	layer.open({
+		content: '评论提交成功',
+		time: 3,
+	})
+}
 $(document).ready(function(){
 //初始化美洽客服
 (function(m, ei, q, i, a, j, s) {
@@ -37,6 +47,29 @@ _MEIQIA('fallback', 1);
 		$(".header-box").css('display','none');
 	}
 	
+	
+	
+$(document).ready(function(){
+	//点赞
+	$('.dianzan').click(function(){
+		var num = parseInt($(this).context.children[1].innerText);
+		$(this).context.children[1].innerText = num + 1;
+	});
+	
+	//弹出评论框
+	$('.article-btn-group .comment').click(function(){
+		layer.open({
+		  type: 1,
+		  content: $('.comment-input').html(),
+		  anim: 'up',
+		  shadeClose: false
+	  });
+	});
+	
+		
+});
+
+
 	//不在微信端点击分享，提示进入微信
 		$(".share").click(function(){
 			if(isWx()){

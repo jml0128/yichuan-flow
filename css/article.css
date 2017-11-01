@@ -97,6 +97,48 @@ ul{
 .main .article-main div{
 	font-size:16px;
 }
+
+/* 文章中的本地微头条广告 */
+.main .in-ad{
+	line-height:0;
+	width:10rem;
+	height:5rem;
+	position:relative;
+	overflow:hidden;
+}
+.main .in-ad img{
+	position:absolute;
+	top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+	min-height:100%;
+	max-width:100%;
+}
+/* 文章阅读量、点击量 */
+.in-ad-box .look-info{
+	font-size:0.4rem;
+	color:#656565;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	margin:0.3rem 0;
+	padding-left:0.3rem;
+}
+.in-ad-box p{
+	color:#bababa;
+	font-size:0.35rem;
+	margin-top:0.3rem;
+	padding:0.3rem;
+}
+.in-ad-box .look-info div:nth-child(1){
+	margin-right:0.5rem;
+}
+.in-ad-box .look-info .aliicon{
+	font-size:0.5rem;
+}
+
 /* 文章末尾广告 */
 .main .article-bottom-ad{
 	height:5rem;

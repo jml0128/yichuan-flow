@@ -26,6 +26,24 @@
 			<div>我是文章的具体内容</div>
 		</div>
 		
+		<!-- 文章中固定的本地微头条广告 -->
+		<div class="in-ad-box">
+			<div class="in-ad">
+				<img src="img/320.jpg" />
+			</div>
+			<p>本文来源于网络，如有侵权请联系本平台删除！</p>
+			<div class="look-info">
+				<div>
+					<span>阅读</span>
+					<span>10000</span>
+				</div>
+				<div class="dianzan">
+					<span class="aliicon good-icon icon-dianzan"></span>
+					<span class="num">10000</span>
+				</div>
+			</div>
+		</div>
+		
 		
 		<!-- 文章末尾广告 -->
 		<div class="article-bottom-ad">
@@ -174,35 +192,7 @@
 <script src="js/index.js"></script>
 <script>
 
-function submit(){
-	//con为评价内容
-	var con = $('textarea')[1].value;
-	console.log($('textarea')[1].value);
-	layer.closeAll();
-	layer.open({
-		content: '评论提交成功',
-		time: 3,
-	})
-}
-$(document).ready(function(){
-	//点赞
-	$('.dianzan').click(function(){
-		var num = parseInt($(this).context.children[1].innerText);
-		$(this).context.children[1].innerText = num + 1;
-	});
-	
-	//弹出评论框
-	$('.article-btn-group .comment').click(function(){
-		layer.open({
-		  type: 1,
-		  content: $('.comment-input').html(),
-		  anim: 'up',
-		  shadeClose: false
-	  });
-	});
-	
-		
-});
+
 </script>
 </body>
 </html>
