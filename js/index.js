@@ -48,6 +48,7 @@ _MEIQIA('fallback', 1);
 				  skin: 'shade-img',
 				  content: $(".shade-box-all").html(),
 				});
+				$('.layui-m-layermain .layui-m-layersection').css('display','block');
 			}else{
 				layer.open({
 					content: '请在微信端点击分享',

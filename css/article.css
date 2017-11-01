@@ -339,9 +339,9 @@ ul{
 .shade-box-all{
 	display:none;
 }
-.layui-m-layermain .layui-m-layersection{
+/* .layui-m-layermain .layui-m-layersection{
 	display:block!important;
-}
+} */
 .layui-layer-shade{
 	opacity:0.8!important;
 }
