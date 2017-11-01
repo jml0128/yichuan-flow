@@ -106,7 +106,7 @@
 					<div class="right">
 						<div class="user-info">
 							<div class="user-name">用户名</div>
-							<div class="good">
+							<div class="dianzan good">
 								<div class="aliicon good-icon icon-dianzan"></div>
 								<span class="num">123</span>
 							</div>
@@ -124,9 +124,9 @@
 					<div class="right">
 						<div class="user-info">
 							<div class="user-name">用户名</div>
-							<div class="good">
+							<div class="dianzan good">
 								<div class="aliicon good-icon icon-dianzan"></div>
-								<span class="num">123</span>
+								<span class="num">111</span>
 							</div>
 						</div>
 						<div class="text">
@@ -173,6 +173,7 @@
 <script src="css/layer_mobile/layer.js"></script>
 <script src="js/index.js"></script>
 <script>
+
 function submit(){
 	//con为评价内容
 	var con = $('textarea')[1].value;
@@ -183,8 +184,14 @@ function submit(){
 		time: 3,
 	})
 }
-//判断右侧滚动条位置
 $(document).ready(function(){
+	//点赞
+	$('.dianzan').click(function(){
+		var num = parseInt($(this).context.children[1].innerText);
+		$(this).context.children[1].innerText = num + 1;
+	});
+	
+	//弹出评论框
 	$('.article-btn-group .comment').click(function(){
 		layer.open({
 		  type: 1,
