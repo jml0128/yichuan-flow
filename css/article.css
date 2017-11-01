@@ -336,13 +336,16 @@ ul{
 	margin-top:0.2rem;
 }
 /* 分享的遮罩层 */
-.shade-box{
+.shade-box-all{
 	display:none;
+}
+.layui-m-layermain .layui-m-layersection{
+	display:block!important;
 }
 .layui-layer-shade{
 	opacity:0.8!important;
 }
-.shade-img{
+.layui-m-layer-shade-img{
 	background-color:rgba(255,255,255,0)!important;
 	box-shadow:none!important;
 	top:0!important;

@@ -46,7 +46,7 @@ _MEIQIA('fallback', 1);
 				  closeBtn: 0,
 				  shadeClose: true,
 				  skin: 'shade-img',
-				  content: $(".shade-box")
+				  content: $(".shade-box-all").html(),
 				});
 			}else{
 				layer.open({
@@ -58,9 +58,5 @@ _MEIQIA('fallback', 1);
 					})
 			}
 		})
-		$(".share-img").click(function(){
-			layer.closeAll();
-		})
-		
 		
 });
