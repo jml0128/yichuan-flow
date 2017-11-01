@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<link rel="shortcut icon" href="favicon.ico">
+<title>文章页面</title>
+<meta name="description" content="植入,流量,广告投放,流量获利,简单,易操作,大平台" />
+<meta name="keywords" content="植入,流量,广告投放,流量获利,简单,易操作,大平台">
+<script src="js/common.js"></script>
+<link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+<link rel="stylesheet" href="css/aliicon/iconfont.css">
+<link rel="stylesheet" href="css/article.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="wrap earn">
+	<div class="main">
+		<!-- 文章顶部广告 -->
+		<div class="top-ad">
+			<!-- <img src="http://placehold.it/640x160" /> -->
+			<img src="img/160.jpg" />
+		</div>
+		<div class="article-main" style="height:10rem;">
+			<div>我是文章的具体内容</div>
+		</div>
+		
+		
+		<!-- 文章末尾广告 -->
+		<div class="article-bottom-ad">
+			<!-- <img src="http://placehold.it/640x160" /> -->
+			<img src="img/320.jpg" />
+		</div>
+		<!-- 底部悬浮广告 -->
+		<div class="bottom-ad-box">
+			<div class="bottom-ad">
+				<!-- <img src="http://placehold.it/640x120" /> -->
+				<img src="img/160.jpg" />
+			</div>
+		</div>
+		
+		<!-- 更多推荐 -->
+		<div class="more-article">
+			<div class="groom">
+				<div>更多推荐</div>
+			</div>
+			<ul class="article-list">
+				<li class="display-one">
+					<a href="">
+						<div class="article-info">
+							<div class="article-name">文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称文章名称</div>
+							<div class="article-origin">
+								<div>文章来源</div>
+								<div>阅读量：<span>132</span></div>
+							</div>
+						</div>
+						<div class="article-img">
+							<img src=""  alt="文章缩略图"/>
+						</div>
+					</a>
+				</li>
+				<li class="display-two">
+					<a href="">
+						<div class="article-info">
+							<div class="article-name">文章名称</div>
+						</div>
+						<div class="article-img">
+							<img src=""  alt="文章缩略图"/>
+							<img src=""  alt="文章缩略图"/>
+							<img src=""  alt="文章缩略图"/>
+						</div>
+						<div class="article-origin">
+							<div>文章来源</div>
+							<div>阅读量：<span>132</span></div>
+						</div>
+					</a>
+				</li>
+				<li class="display-one">
+					<a href="">
+						<div class="article-info">
+							<div class="article-name">文章名称</div>
+							<div class="article-origin">
+								<div>文章来源</div>
+								<div>阅读量：<span>132</span></div>
+							</div>
+						</div>
+						<div class="article-img">
+							<img src=""  alt="文章缩略图"/>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- 评论列表 -->
+		<div class="comment-box">
+			<div class="comment">
+				<div>评论列表</div>
+			</div>
+			<ul class="comment-list">
+				<li>
+					<div class="left user-img">
+						<img src="" alt="头像"/>
+					</div>
+					<div class="right">
+						<div class="user-info">
+							<div class="user-name">用户名</div>
+							<div class="good">
+								<div class="aliicon good-icon icon-dianzan"></div>
+								<span class="num">123</span>
+							</div>
+						</div>
+						<div class="text">
+							评论内容评论内容评论内容评论内容评论内容评论内容
+						</div>
+						<div class="time">10-11 12:24</div>
+					</div>
+				</li>
+				<li>
+					<div class="left user-img">
+						<img src="" alt="头像"/>
+					</div>
+					<div class="right">
+						<div class="user-info">
+							<div class="user-name">用户名</div>
+							<div class="good">
+								<div class="aliicon good-icon icon-dianzan"></div>
+								<span class="num">123</span>
+							</div>
+						</div>
+						<div class="text">
+							评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容
+						</div>
+						<div class="time">10-11 12:24</div>
+					</div>
+				</li>
+			</ul>
+			<div class="more-comment">
+				<a href="">更多评论>></a>
+			</div>
+		</div>
+		
+		<!-- 评论和分享按钮 -->
+		<div class="article-btn-group">
+			<div class="btn comment" onclick="close()">
+				<div>点我</div>
+				<div>评论</div>
+			</div>
+			<div class="btn share">
+				<div>点我</div>
+				<div>分享</div>
+			</div>
+		</div>
+		<div class="shade-box">
+			<img class="share-img" src="img/share.png" width="100%"/>
+		</div>
+		<div class="comment-input">
+			<div class="comment-input-box">
+				<textarea></textarea>
+				<div class="comment-btn">
+					<div class="submit" onclick="submit()">提交评论</div>
+					<div class="close" onclick="close(layer.closeAll())">关闭</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper-3.4.0.min.js"></script>
+<script src="css/layer_mobile/layer.js"></script>
+<script src="js/index.js"></script>
+<script>
+function submit(){
+	//con为评价内容
+	var con = $('textarea')[1].value;
+	console.log($('textarea')[1].value);
+	layer.closeAll();
+	layer.open({
+		content: '评论提交成功',
+		time: 3,
+	})
+}
+//判断右侧滚动条位置
+$(document).ready(function(){
+	$('.article-btn-group .comment').click(function(){
+		layer.open({
+		  type: 1,
+		  content: $('.comment-input').html(),
+		  anim: 'up',
+		  shadeClose: false
+	  });
+	});
+	
+		
+});
+</script>
+</body>
+</html>

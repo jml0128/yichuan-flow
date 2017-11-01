@@ -20,7 +20,7 @@ function changeTextSize(){
 }
 !function(e,t){
 	function i(){
-		var t=n.getBoundingClientRect().width;t/s>750&&(t=750*s);
+		var t=n.getBoundingClientRect().width;t/s>640&&(t=640*s);
 		var i=t/10;
 		n.style.fontSize=i+"px",
 		d.rem=e.rem=i
@@ -58,7 +58,7 @@ function changeTextSize(){
 			if(n.getAttribute("data-dpr") == 1){
 				m = 1;
 			}
-			if(o=r.createElement("meta"),o.setAttribute("name","viewport"),e.webPageScalable?o.setAttribute("content","initial-scale="+m+", user-scalable=yes"):o.setAttribute("content","initial-scale="+m+", maximum-scale="+m+", minimum-scale="+m+", user-scalable=no"),n.firstElementChild)
+			if(o=r.createElement("meta"),o.setAttribute("name","viewport"),e.webPageScalable?o.setAttribute("content","initial-scale="+1+", user-scalable=yes"):o.setAttribute("content","initial-scale="+1+", maximum-scale="+1+", minimum-scale="+1+", user-scalable=no"),n.firstElementChild)
 				n.firstElementChild.appendChild(o);
 			else{
 				var h=r.createElement("div");

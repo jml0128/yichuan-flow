@@ -69,11 +69,11 @@ ul{
 	top:0;
 	background:#4d90e4;
 	width: 9.6rem;
-	min-width:345px;
+	/* min-width:345px; */
 }
 .wrap{
 	width:10rem;
-	min-width:360px;
+	/* min-width:360px; */
 	margin:auto;
 	overflow:hidden;
 }
@@ -85,7 +85,7 @@ ul{
 	margin-top:0.3rem;
 	padding:0.2rem 0;
 	width:9.6rem;
-	min-width:345px;
+	/* min-width:345px; */
 	height:auto;
 	border-radius:0.15rem;
 	background:#fff;
@@ -185,7 +185,7 @@ ul{
 }
 .wrap .main .news-list{
 	width:9.6rem;
-	min-width:345px;
+	/* min-width:345px; */
 	margin:0 auto;
 	margin-top:0.6rem;
 }
@@ -212,7 +212,7 @@ ul{
 .wrap .main .news-list .news-article{
 	padding:0.25rem 0;
 	width:9.6rem;
-	min-width:345px;
+	/* min-width:345px; */
 	margin:0 auto;
 	background:rgba(255,255,255,0.2);
 }
@@ -353,7 +353,7 @@ ul{
 }
 .user-menu{
 	width:9rem;
-	min-width:324px;
+	/* min-width:324px; */
 	margin:auto;
 	margin-top:0.2rem;
 	background:rgba(255,255,255,0.2);
@@ -398,7 +398,7 @@ ul{
 }
 .media-part{
 	width:9.2rem;
-	min-width:331px;
+	/* min-width:331px; */
 	margin:auto;
 	border-radius:0.2rem;
 	background:rgba(255,255,255,.2);

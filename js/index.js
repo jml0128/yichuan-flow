@@ -32,8 +32,35 @@ _MEIQIA('fallback', 1);
 			return false;
 		}
 	}
-	
+	//微信端不显示顶部标题
 	if(isWx()){
 		$(".header-box").css('display','none');
 	}
+	
+	//不在微信端点击分享，提示进入微信
+		$(".share").click(function(){
+			if(isWx()){
+				layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  shadeClose: true,
+				  skin: 'shade-img',
+				  content: $(".shade-box")
+				});
+			}else{
+				layer.open({
+					content: '请在微信端点击分享',
+					btn: '我知道了',
+					shadeClose: false,
+					  title: false,
+					  closeBtn: 0,
+					})
+			}
+		})
+		$(".share-img").click(function(){
+			layer.closeAll();
+		})
+		
+		
 });
