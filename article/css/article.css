@@ -337,7 +337,6 @@ ul{
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	box-shadow:0 -1px 13px 0px #868686;
 }
 .main .bottom-ad-box .bottom-ad{
 	width:10rem;
