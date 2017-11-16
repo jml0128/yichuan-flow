@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<link rel="shortcut icon" href="favicon.ico">
+<title>开通个人会员</title>
+<meta name="description" content="植入,流量,广告投放,流量获利,简单,易操作,大平台" />
+<meta name="keywords" content="植入,流量,广告投放,流量获利,简单,易操作,大平台">
+<link rel="stylesheet" href="../css/swiper-3.4.0.min.css">
+<link rel="stylesheet" href="../css/aliicon/iconfont.css">
+<link rel="stylesheet" href="../css/agent.css">
+<link rel="stylesheet" href="../css/layer/css/layui.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="form-wrap">
+	<div class="main">
+		<div class="title">
+			<span>开通个人会员</span>
+		</div>
+		<div class="money">
+			<span>剩余额度:</span>
+			<span>￥999999</span>
+		</div>
+		<form class="layui-form" action="" method="post">
+		  <div class="layui-form-item">
+			<div class="layui-input-block vip-type-box">
+				<div class="vip-type active" data-state="1">
+					<div type="radio"class="vip-time">开通一年会员</div>
+					<div class="vip-price">￥299.00元</div>
+				</div>
+				<div class="vip-type" data-state="3">
+					<div class="vip-time">开通三年会员</div>
+					<div class="vip-price">￥599.00元</div>
+				</div>
+			</div>
+			<input class="vip-type-states" type="text" name="vip-type" lay-verify="required" value="1" autocomplete="off" class="layui-input">
+		  </div>
+		  
+		  
+		  <div class="opening-way">
+			<div data-opening="phone">手机号码开通</div>
+			<div data-opening="ewm" class="ewm-btn" lay-submit="" lay-filter="ewm-opening">二维码开通</div>
+		  </div>
+		  
+		  
+		   <div class="layui-form-item phone-opening" style="text-align:center;">
+			<div class="layui-input-inline" style="width:370px;margin-right:0;">
+			  <input class="phone" type="tel" style="padding-left:10px;width:360px;background:#f1f1f1;border:1px #e1e1e1 solid;" name="phone" lay-verify="required|phone" placeholder="请输入手机号码" autocomplete="off" class="layui-input">
+			</div>
+		  </div>
+		  
+		  <div class="ewm-opening">
+			<img src="http://placehold.it/320x320" width="100%">
+		  </div>
+		  
+		  <div class="layui-form-item">
+			<div class="layui-input-block new-submit">
+			  <button class="layui-btn submit" lay-submit="" lay-filter="company-vip">立即开通</button>
+			  <button  class="layui-btn layui-btn-primary">返回</button>
+			</div>
+		  </div>
+		</form>
+	</div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/swiper-3.4.0.min.js"></script>
+<script src="../css/layer/layui.js"></script>
+<script src="../js/index.js"></script>
+<script>
+layui.use(['form', 'layedit'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit;
+  
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+ 
+  //自定义验证规则
+  form.verify({
+	 accountnum: function(value, item){
+		if(value < 1){
+			return '必须填入大于0的整数';
+		}
+	 }
+  });
+  //选择账号类型
+  $('.vip-type').click(function(){
+	$('.vip-type-states').val($(this).context.dataset.state);
+	$('.vip-type').removeClass('active');
+	$(this).addClass('active');
+  });
+  
+  //选择开通方式
+  $('.opening-way div').click(function(){
+	$('.opening-way div').removeClass('active');
+	$('.opening-way div').hide();
+	$(this).addClass('active');
+	$(this).show();
+	//如果点击二维码开通
+	if($(this).context.dataset.opening == 'ewm'){
+		$('.submit').hide();
+		$('.ewm-opening').show();
+		$('.ewm-btn').text('重新生成');
+		//为了跳过填入手机号的验证，随意插入一个不存在的手机号码
+		$('.phone').val('13222222222');
+	}
+	//如果点击手机号开通
+	if($(this).context.dataset.opening == 'phone'){
+		$('.phone-opening').show();
+	}
+  });
+  
+  //点击二维码开通的时候提交
+  form.on('submit(ewm-opening)', function(data){
+    layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })
+	console.log('我是提交的信息' + JSON.stringify(data.field));
+    return false;
+  });
+  
+  //监听提交
+  form.on('submit(company-vip)', function(data){
+    layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })
+	console.log('我是提交的信息' + JSON.stringify(data.field));
+    return false;
+  });
+  
+  
+});
+
+</script>
+</body>
+</html>

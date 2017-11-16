@@ -1,0 +1,149 @@
+.form-wrap{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.form-wrap input{
+	width:400px;
+	height:45px;
+	font-size: 16px;
+}
+.form-wrap .layui-form-select dl dd.layui-this{
+	background-color:#009688;
+}
+.form-wrap .layui-form-label{
+	font-size:16px;
+}
+.form-wrap .layui-form-item{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+.form-wrap .layui-form-item .layui-input-inline{
+	float: inherit;
+	width:380px;
+	height:45px;
+}
+.form-wrap .layui-input-block{
+	margin-left:0;
+}
+.form-wrap .layui-form-mid{
+	float:inherit;
+}
+.form-wrap .title{
+	font-size:30px;
+	margin-top:48px;
+	margin-bottom:15px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#656565;
+}
+.form-wrap .money{
+	font-size:16px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#7d7d7d;
+	margin-bottom:40px;
+}
+.form-wrap .money span:nth-child(2){
+	color:#009688;
+	font-weight:800;
+}
+.form-wrap .layui-form-item{
+	margin-bottom:35px;
+}
+.form-wrap .layui-form-item .tips{
+	color:#989898;
+	margin-top:10px;
+}
+.form-wrap .new-submit{
+	width: 100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.form-wrap .new-submit button{
+	width:120px;
+	height:40px;
+	margin:0 20px;
+}
+.form-wrap .vip-type-states{
+	display:none;
+}
+/* 批量开通 */
+.form-wrap .vip-type-box{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.form-wrap .vip-type{
+	width:270px;
+	height:150px;
+	background:#f1f1f1;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+	border:1px #e1e1e1 solid;
+	color:#575757;
+}
+.form-wrap .active{
+	color:#fff!important;
+	background:#1aa194!important;
+}
+.form-wrap .vip-type:nth-child(1){
+	margin-right:10px;
+}
+.form-wrap .vip-type div:nth-child(1){
+	font-size:30px;
+	font-weight:800;
+}
+.form-wrap .vip-type div:nth-child(2){
+	font-size:20px;
+	font-weight:800;
+	margin-top:15px;
+}
+
+.form-wrap .opening-way{
+}
+.form-wrap .opening-way div{
+	width:370px;
+	height:50px;
+	font-size:16px;
+	color:#565656;
+	background:#f1f1f1;
+	margin:20px auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px #e1e1e1 solid;
+}
+.form-wrap .phone-opening{
+	display:none;
+}
+.form-wrap .ewm-opening{
+	display:none;
+	text-align:center;
+	width:260px;
+	height:260px;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.form-wrap .res-ewm{
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
