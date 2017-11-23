@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<link rel="shortcut icon" href="favicon.ico">
+<title>提现申请</title>
+<meta name="description" content="植入,流量,广告投放,流量获利,简单,易操作,大平台" />
+<meta name="keywords" content="植入,流量,广告投放,流量获利,简单,易操作,大平台">
+<script src="js/common.js"></script>
+<link rel="stylesheet" href="css/aliicon/iconfont.css">
+<link rel="stylesheet" href="css/layer/css/layui.css">
+<link rel="stylesheet" href="css/index.css">
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="wrap earn">
+	<div class="main">
+		<div class="header-box">
+			<div class="header">
+				<div class="title">提现申请</div>
+			</div>
+		</div>
+		<div class="get-cash">
+			<form class="layui-form" action="" method="post">
+			  <div class="layui-form-item">
+				<label class="layui-form-label">手机号码</label>
+				<div class="layui-input-block">
+				  <input type="tel" name="phone" lay-verify="required|phone" placeholder="请输入预留手机号码(必填内容)" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			  <div class="layui-form-item get-yzm">
+				<label class="layui-form-label">验证码</label>
+				<div class="layui-input-block">
+				  <input type="text" name="yzm" lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+				  <div class="get-yzm-btn" data-yzm="获取验证码">获取验证码</div>
+				</div>
+			  </div>
+			  <div class="layui-form-item">
+				<label class="layui-form-label">收益总额</label>
+				<div class="layui-input-block">
+				  <input type="text" name="total-money" lay-verify="required" placeholder="收益总额" value="" disabled="true" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			  <div class="layui-form-item">
+				<label class="layui-form-label">可提现金额</label>
+				<div class="layui-input-block">
+				  <input type="text" name="money" lay-verify="required" placeholder="可提现金额" value="" disabled="true" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			  <!-- <div class="layui-form-item">
+				<label class="layui-form-label">提现金额</label>
+				<div class="layui-input-block">
+				  <input type="number" name="cash" lay-verify="required" placeholder="请输入提现金额" autocomplete="off" class="layui-input">
+				</div>
+			  </div> -->
+			  <div class="layui-form-item">
+				<!-- <div>可提现金额</div> -->
+				<div class="layui-input-block get-money">
+					<div class="money-num active" data-money="500">
+						500
+					</div>
+					<div class="money-num" data-money="800">
+						800
+					</div>
+					<div class="money-num" data-money="1000">
+						1000
+					</div>
+					<div class="money-num" data-money="2000">
+						2000
+					</div>
+				</div>
+				<input class="get-money-input" type="text" name="get-money" lay-verify="required" value="500" autocomplete="off" class="layui-input">
+			  </div>
+			  <div class="tips">
+				<span style="color:#222222;">温馨提示：</span>
+				<span style="color:#1aa194;">
+					<div>发起申请后24小时内处理</div>
+				</span>
+			  </div>
+			  <div class="layui-form-item">
+				<div class="layui-input-block new-submit">
+				  <button class="layui-btn" lay-submit="" lay-filter="company-vip">立即提现</button>
+				</div>
+			  </div>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="css/layer/layui.js"></script>
+<script src="js/index.js"></script>
+<script>
+layui.use(['form', 'layedit'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit;
+  
+  
+  //初始化收益总额
+  $("input[name='total-money']").val(565456 + '元');
+  //初始化可提现金额
+  $("input[name='money']").val(2000 + '元');
+  
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+ 
+  //自定义验证规则
+  form.verify({
+	 accountnum: function(value, item){
+		if(value < 1){
+			return '必须填入大于0的整数';
+		}
+	 }
+  });
+  //选择账号类型
+  $('.money-num').click(function(){
+	$('.get-money-input').val($(this).context.dataset.money);
+	$('.money-num').removeClass('active');
+	$(this).addClass('active');
+  });
+  
+  
+  //监听提交
+  form.on('submit(company-vip)', function(data){
+    layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })
+	console.log('我是提交的信息' + JSON.stringify(data.field));
+    return false;
+  });
+});
+
+$(document).ready(function(){
+	//获取验证码
+	$('.get-yzm-btn').click(function(){
+		getYzm(this);
+	})
+});
+</script>
+</body>
+</html>

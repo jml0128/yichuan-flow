@@ -8,6 +8,31 @@ function submit(){
 		time: 3,
 	})
 }
+
+//获取验证码
+function getYzm(e){
+	if(e.innerHTML == e.getAttribute('data-yzm')){
+		layer.msg('发送成功',{
+			time: 2000
+		});
+		var time = 60;
+		e.innerHTML = '重新获取(' + time + 's)';
+		var timer = setInterval(function(){
+			time--;
+			e.innerHTML = '重新获取(' + time + 's)';
+			if(time == 0){
+				clearInterval(timer);
+				e.innerHTML = '获取验证码';
+			}
+		},1000)
+	}else{
+		layer.msg('请稍后再试',{
+			time: 2000
+		});
+	}
+}
+  
+  
 $(document).ready(function(){
 //初始化美洽客服
 (function(m, ei, q, i, a, j, s) {
@@ -65,6 +90,9 @@ $(document).ready(function(){
 		  shadeClose: false
 	  });
 	});
+	
+	
+  
 	
 		
 });
